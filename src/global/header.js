@@ -1,5 +1,5 @@
 import React from "react"
-import { FaBeer } from "react-icons/fa"
+import { FaCartArrowDown } from "react-icons/fa"
 import {
   Navbar,
   Nav,
@@ -16,16 +16,25 @@ const Header = () => {
       bg="primary"
       variant="dark"
       expand="lg"
-      className="font-weight-bold text-uppercase"
+      className="font-weight-bold text-uppercase display-flex"
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+      }}
     >
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="navbar-nav">
         <Nav className="mx-auto">
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/about">About</Nav.Link>
-          <Nav.Link href="/blog">Blog</Nav.Link>
-          <FaBeer />
-          <Nav.Link href="/contact">Contact</Nav.Link>
+          <FaCartArrowDown
+            style={{
+              verticalAlign: "bottom",
+              fontSize: "2rem",
+              color: "yellow",
+            }}
+          />
         </Nav>
       </Navbar.Collapse>
     </Navbar>
