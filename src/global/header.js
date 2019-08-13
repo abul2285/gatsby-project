@@ -1,14 +1,6 @@
 import React from "react"
 import { FaCartArrowDown } from "react-icons/fa"
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap"
-import { Link } from "gatsby"
+import { Navbar, Nav } from "react-bootstrap"
 
 const Header = () => {
   return (

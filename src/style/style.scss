@@ -1,19 +1,16 @@
-// .navbar-nav {
-//   display: flex;
-//   margin: 0;
-//   padding: 0;
-//   list-style: none;
-// }
-// .navbar-item {
-// }
-// a {
-//   display: inline-block;
-//   text-decoration: none;
-//   text-transform: uppercase;
-//   padding: 6px 12px;
-//   background: #ccc;
-// }
+.about-button {
+  font-size: 1rem;
+  transition: all 0.6s ease;
+  &:hover {
+    background: #f0f;
+    color: yellow;
+  }
+}
 
-Fabeer {
-  vertical-align: middle;
+.footer-text {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
 }
