@@ -4,10 +4,10 @@ import { graphql } from "gatsby"
 import BackgroundSection from "../global/BackgroundSection"
 import Info from "../global/Home/Info"
 
-export default ({ data }) => (
+const AboutPage = ({ data }) => (
   <Layout>
     <BackgroundSection
-      img={data.file.childImageSharp.fluid}
+      img={data.img.childImageSharp.fluid}
       styleClass="min-vh-100 d-flex justify-content-center align-items-center hero-image"
       title="About Title"
     />
@@ -17,11 +17,7 @@ export default ({ data }) => (
 
 export const query = graphql`
   {
-    file(
-      absolutePath: {
-        eq: "C:/Users/abul3/Desktop/Coffee/src/images/about-background.jpeg"
-      }
-    ) {
+    img: file(relativePath: { eq: "about-background.jpeg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -30,3 +26,4 @@ export const query = graphql`
     }
   }
 `
+export default AboutPage
