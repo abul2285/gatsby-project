@@ -26,6 +26,7 @@ const Header = () => {
               fontSize: "2rem",
               color: "yellow",
             }}
+            className="snipcart-checkout"
           />
         </Nav>
       </Navbar.Collapse>

@@ -12,7 +12,17 @@ export default function Product({ product }) {
           <Card.Subtitle className="mb-2 text-muted">
             {product.price}
           </Card.Subtitle>
-          <Button variant="outline-warning">Add To Cart</Button>
+          <Button
+            variant="outline-warning"
+            className="snipcart-add-item"
+            data-item-id={product.id}
+            data-item-name={product.title}
+            data-item-price={product.price}
+            data-item-image={product.image.fluid.src}
+            data-item-url="https://mf-gatsby-project.netlify.com/"
+          >
+            Add To Cart
+          </Button>
         </Card.Body>
       </Card>
     </Col>
