@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import BackgroundSection from "../global/BackgroundSection"
 import Info from "../global/Home/Info"
 import Menu from "../global/Home/Menu"
+import Products from "../global/Home/Products";
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = ({ data }) => (
     />
     <Info />
     <Menu items={data.menu} />
+    <Products/>
   </Layout>
 )
 
